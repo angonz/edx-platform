@@ -1,12 +1,12 @@
 <div class="provider-wrapper">
   <div class="provider-info">
-    <%= edx.StringUtils.interpolate(
+    <%- edx.StringUtils.interpolate(
           gettext("You still need to visit the %(display_name)s website to complete the credit process."),
           { display_name: display_name })
           %>
   </div>
   <div class="provider-more-info">
-    <%= edx.StringUtils.interpolate(
+    <%- edx.StringUtils.interpolate(
           gettext("To finalize course credit, %(display_name)s requires %(platform_name)s learners to submit a credit request."),
           { display_name: display_name, platform_name: platformName })
           %>
